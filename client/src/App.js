@@ -6,8 +6,8 @@ import Register from './pages/register/Register';
 function App() {
   return (
     <div>
-      <Home />
-      {/* <Profile /> */}
+      {/* <Home /> */}
+      <Profile />
       {/* <Login /> */}
       {/* <Register /> */}
     </div>

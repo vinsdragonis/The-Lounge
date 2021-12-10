@@ -111,6 +111,7 @@ export default function Rightbar({ profile }) {
                         />
                         <span className="rightbarFollowingName">Tom Cruise</span>
                     </div>
+                    <h4 className="rightbarAdTitle">Advertisement</h4>
                     <img
                         className="rightbarAd"
                         src="/assets/ESO_Dragonhold.jpg"

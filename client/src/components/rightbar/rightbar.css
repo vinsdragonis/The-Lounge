@@ -49,6 +49,12 @@
   margin-bottom: 10px;
 }
 
+.rightbarAdTitle{
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
 .rightbarInfo{
   margin-bottom: 30px;
 }
