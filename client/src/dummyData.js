@@ -35,7 +35,7 @@ export const Posts = [
     {
         id: 1,
         desc: "Bow before the Dragon King",
-        photo: "assets/post/Kaalgrontiid.jpg",
+        photo: "post/Kaalgrontiid.jpg",
         date: "5 mins ago",
         userId: 1,
         like: 32,
@@ -43,7 +43,7 @@ export const Posts = [
     },
     {
         id: 2,
-        photo: "assets/post/Rada_Al-Saran.jpg",
+        photo: "/post/Rada_Al-Saran.jpg",
         date: "15 mins ago",
         userId: 2,
         like: 2,
@@ -52,7 +52,7 @@ export const Posts = [
     {
         id: 3,
         desc: "Soon, the Dark Aeon shall rise above all.",
-        photo: "assets/post/Kaalgrontiid_flight.jpg",
+        photo: "post/Kaalgrontiid_flight.jpg",
         date: "1 hour ago",
         userId: 3,
         like: 61,
