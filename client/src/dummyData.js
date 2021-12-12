@@ -1,32 +1,32 @@
 export const Users = [
     {
         id:1,
-        profilePicture: "assets/person/dp.jpg",
+        profilePicture: "person/dp.jpg",
         username: "King Dragonis",
     },
     {
         id:2,
-        profilePicture: "assets/person/dp.jpg",
+        profilePicture: "person/dp.jpg",
         username: "Vineeth",
     },
     {
         id:3,
-        profilePicture: "assets/person/dp.jpg",
+        profilePicture: "person/dp.jpg",
         username: "Vulnahkriin",
     },
     {
         id:4,
-        profilePicture: "assets/person/dp.jpg",
+        profilePicture: "person/dp.jpg",
         username: "Vins",
     },
     {
         id:5,
-        profilePicture: "assets/person/dp.jpg",
+        profilePicture: "person/dp.jpg",
         username: "Vineeth B V",
     },
     {
         id:6,
-        profilePicture: "assets/person/dp.jpg",
+        profilePicture: "person/dp.jpg",
         username: "Drago",
     },
 ];

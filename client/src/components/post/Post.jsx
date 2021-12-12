@@ -20,11 +20,11 @@ export default function Post({ post }) {
                     <div className="postTopLeft">
                         <img
                             className="postProfileImg"
-                            src={ Users.filter((u) => PF+u.id === PF+post.userId)[0].profilePicture }
+                            src={ Users.filter((u) => u.id === post.userId)[0].profilePicture }
                             alt=""
                         />
                         <span className="postUsername">
-                        { Users.filter((u) => u.id === post.userId)[0].username }
+                            { Users.filter((u) => u.id === post.userId)[0].username }
                         </span>
                         <span className="postDate">{ post.date }</span>
                     </div>
