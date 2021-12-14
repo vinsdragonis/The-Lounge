@@ -3,6 +3,8 @@ import { Users } from "../../dummyData";
 import Online from "../online/Online";
 
 export default function Rightbar({ profile }) {
+    const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+
     const HomeRightbar = () => {
         return (
             <>
@@ -14,7 +16,7 @@ export default function Rightbar({ profile }) {
                 </div>
                 <img
                     className="rightbarAd"
-                    src="/assets/ESO_Dragonhold.jpg"
+                    src= { PF + "/assets/ESO_Dragonhold.jpg" }
                     alt=""
                 />
                 <h4 className="rightbarTitle">Online friends</h4>
@@ -49,72 +51,72 @@ export default function Rightbar({ profile }) {
                 <div className="rightbarFollowings">
                     <div className="rightbarFollowing">
                         <img
-                        src="assets/person/dp.jpg"
-                        alt=""
-                        className="rightbarFollowingImg"
+                            src={ PF + "person/dp.jpg" }
+                            alt=""
+                            className="rightbarFollowingImg"
                         />
                         <span className="rightbarFollowingName">King Dragonis</span>
                     </div>
                     <div className="rightbarFollowing">
                         <img
-                        src="assets/person/dp.jpg"
-                        alt=""
-                        className="rightbarFollowingImg"
+                            src={ PF + "person/dp.jpg" }
+                            alt=""
+                            className="rightbarFollowingImg"
                         />
                         <span className="rightbarFollowingName">Vineeth</span>
                     </div>
                     <div className="rightbarFollowing">
                         <img
-                        src="assets/person/dp.jpg"
-                        alt=""
-                        className="rightbarFollowingImg"
+                            src={ PF + "person/dp.jpg" }
+                            alt=""
+                            className="rightbarFollowingImg"
                         />
                         <span className="rightbarFollowingName">Vulnahkriin</span>
                     </div>
                     <div className="rightbarFollowing">
                         <img
-                        src="assets/person/dp.jpg"
-                        alt=""
-                        className="rightbarFollowingImg"
+                            src={ PF + "person/dp.jpg" }
+                            alt=""
+                            className="rightbarFollowingImg"
                         />
                         <span className="rightbarFollowingName">Vins</span>
                     </div>
                     <div className="rightbarFollowing">
                         <img
-                        src="assets/person/dp.jpg"
-                        alt=""
-                        className="rightbarFollowingImg"
+                            src={ PF + "person/dp.jpg" }
+                            alt=""
+                            className="rightbarFollowingImg"
                         />
                         <span className="rightbarFollowingName">Vineeth B V</span>
                     </div>
                     <div className="rightbarFollowing">
                         <img
-                        src="assets/person/dp.jpg"
-                        alt=""
-                        className="rightbarFollowingImg"
+                            src={ PF + "person/dp.jpg" }
+                            alt=""
+                            className="rightbarFollowingImg"
                         />
                         <span className="rightbarFollowingName">Drago</span>
                     </div>
                     <div className="rightbarFollowing">
                         <img
-                        src="assets/person/dp.jpg"
-                        alt=""
-                        className="rightbarFollowingImg"
+                            src={ PF + "person/dp.jpg" }
+                            alt=""
+                            className="rightbarFollowingImg"
                         />
                         <span className="rightbarFollowingName">John Carter</span>
                     </div>
                     <div className="rightbarFollowing">
                         <img
-                        src="assets/person/dp.jpg"
-                        alt=""
-                        className="rightbarFollowingImg"
+                            src={ PF + "person/dp.jpg" }
+                            alt=""
+                            className="rightbarFollowingImg"
                         />
                         <span className="rightbarFollowingName">Tom Cruise</span>
                     </div>
                     <h4 className="rightbarAdTitle">Advertisement</h4>
                     <img
                         className="rightbarAd"
-                        src="/assets/ESO_Dragonhold.jpg"
+                        src={ PF +"ESO_Dragonhold.jpg" }
                         alt=""
                     />
                 </div>
