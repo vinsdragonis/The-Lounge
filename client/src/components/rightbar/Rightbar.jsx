@@ -16,7 +16,7 @@ export default function Rightbar({ profile }) {
                 </div>
                 <img
                     className="rightbarAd"
-                    src= { PF + "/assets/ESO_Dragonhold.jpg" }
+                    src= { PF + "ESO_Dragonhold.jpg" }
                     alt=""
                 />
                 <h4 className="rightbarTitle">Online friends</h4>

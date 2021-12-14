@@ -34,7 +34,7 @@ export default function Post({ post }) {
                 </div>
                 <div className="postCenter">
                     <span className="postText">{ post?.desc }</span>
-                    <img className="postImg" src={ PF+post.photo } alt="" />
+                    <img className="postImg" src={`${ PF }+post.photo`} alt="" />
                 </div>
                 <div className="postBottom">
                     <div className="postBottomLeft">
