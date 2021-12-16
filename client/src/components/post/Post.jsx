@@ -1,12 +1,21 @@
+import { useEffect, useState } from 'react';
 import "./post.css";
 import { MoreVert } from "@material-ui/icons";
 import { Users } from "../../dummyData";
-import { useState } from "react";
 
 export default function Post({ post }) {
     const [like, setLike] = useState(post.like)
     const [isLiked, setIsLiked] = useState(false)
     const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+
+    useEffect(() => {
+        const fetchPosts = async () => {
+            const res = await axios.get("posts/timeline/61a524feb6b61142f66cb0e8");
+            console.log(res);
+        }
+        
+        fetchPosts();
+    }, []);
 
     const likeHandler = () => {
         setLike(isLiked ? like-1 : like+1)

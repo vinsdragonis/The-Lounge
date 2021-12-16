@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import './feed.css';
 import Share from '../share/Share';
-// import Post from '../post/Post';
 import axios from 'axios';
 
 export default function Feed() {
