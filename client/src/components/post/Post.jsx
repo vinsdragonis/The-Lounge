@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import "./post.css";
 import { MoreVert } from "@material-ui/icons";
 import { Users } from "../../dummyData";
+import axios from "axios";
 
 export default function Post({ post }) {
     const [like, setLike] = useState(post.like)
