@@ -26,7 +26,10 @@ export const FooterMessage = () => {
             {
                 signUpRoute ? (
                     <>
-                        <Message attached="bottom" warning>
+                        <Message
+                            attached="bottom"
+                            warning
+                        >
                             <Icon name="help" />
                             Existing user? {" "}
 
@@ -39,7 +42,10 @@ export const FooterMessage = () => {
                     </>
                 ) : (
                     <>
-                        <Message attached="bottom" warning>
+                        <Message
+                            attached="bottom"
+                            warning
+                        >
                             <Icon name="lock" />
 
                             <Link href="/reset">
@@ -47,7 +53,10 @@ export const FooterMessage = () => {
                             </Link>
                         </Message>
                         
-                        <Message attached="bottom" warning>
+                        <Message
+                            attached="bottom"
+                            warning
+                        >
                             <Icon name="help" />
                             New user? {" "}
 

@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Form, Button, Message, Segment, TextArea, Divider } from 'semantic-ui-react';
 import CommonInputs from '../components/Common/CommonInputs';
+import ImageDropDiv from '../components/Common/ImageDropDiv';
 import { HeaderMessage, FooterMessage } from '../components/Common/WelcomeMessage';
 const regexUserName = /^(?!.*\.\.)(?!.*\.$)[^\W][\w.]{0,29}$/;
 
@@ -20,12 +21,18 @@ export default function signup() {
     const [showSocialLinks, setShowSocialLinks] = useState(false);
     const [showPassword, setShowPassword] = useState(false);
     const [errorMsg, setErrorMsg] = useState(null);
+    const [formLoading, setFormLoading] = useState(false);
+    const [submitDisabled, setSubmitDisabled] = useState(true);
 
     const [username, setUsername] = useState('');
     const [usernameLoading, setUsernameLoading] = useState(false);
     const [usernameAvailable, setUsernameAvailable] = useState(false);
-    const [formLoading, setFormLoading] = useState(false);
-    const [submitDisabled, setSubmitDisabled] = useState(true);
+
+    const [media, setMedia] = useState(null);
+    const [mediaPreview, setMediaPreview] = useState(null);
+    const [highlighted, setHighlighted] = useState(false);
+    
+    const inputRef = useRef();
 
     useEffect(() => {
         const isUser = Object.values({ name, email, password, bio }).every(item => Boolean(item));
@@ -37,7 +44,12 @@ export default function signup() {
     }
 
     const handleChange = e => {
-        const { name, value } = e.target;
+        const { name, value,files } = e.target;
+
+        if (name === 'media') {
+            setMedia(files[0]);
+            setMediaPreview(URL.createObjectURL(files[0]));
+        }
 
         setUser(prev => ({ ...prev, [name]: value }));
     }
@@ -58,6 +70,16 @@ export default function signup() {
                 />
 
                 <Segment>
+                    <ImageDropDiv
+                        highlighted={ highlighted }
+                        setHighlighted={ setHighlighted }
+                        inputRef={ inputRef }
+                        handleChange={ handleChange }
+                        mediaPreview={ mediaPreview }
+                        setMediaPreview={ setMediaPreview }
+                        setMedia={ setMedia }
+                    />
+
                     <Form.Input
                         label="Name"
                         placeholder="Name"
@@ -135,7 +157,8 @@ export default function signup() {
                     <Divider hidden />
 
                     <Button
-                        content="Signup"
+                        icon="signup"
+                        content="Sign up"
                         type="submit"
                         color="orange"
                         disabled={ submitDisabled || !usernameAvailable }
