@@ -72,6 +72,44 @@ router.post('/', async (req, res) => {
 
         user.password = await bcrypt.hash(password, 10);
         await user.save();
+
+        let profileFields = {};
+        profileFields.user = user._id;
+
+        profileFields.bio = bio;
+        profileFields.bio = {}
+
+        if (facebook) {
+            profileFields.facebook = facebook;
+        }
+
+        if (github) {
+            profileFields.github = github;
+        }
+
+        if (twitter) {
+            profileFields.twitter = twitter;
+        }
+
+        await new ProfileModel(profileFields).save();
+        await new FollowerModel({
+            user: user._id,
+            followers: [],
+            following: []
+        }).save();
+
+        const payload = { userId: user._id };
+        jwt.sign(
+            payload,
+            process.env.jwtSecret,
+            { expiresIn: "2d" },
+            (err,token) => {
+                if (err) {
+                    throw err;
+                }
+                res.status(200).json(token);
+            }
+        );
     } catch (err) {
         console.log(err);
         return res.status(500).send(`Server error`);
