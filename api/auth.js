@@ -1,10 +1,10 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const User = require('../models/UserModel');
-const Follower = require('../models/FollowerModel');
-const jwt = require('jsonwebtoken');
-const bcrypt = require('bcryptjs');
-const isEmail = require('validator/lib/isEmail');
+const UserModel = require("../models/UserModel");
+const FollowerModel = require("../models/FollowerModel");
+const jwt = require("jsonwebtoken");
+const bcrypt = require("bcryptjs");
+const isEmail = require("validator/lib/isEmail");
 
 router.post('/', async (req, res) => {
     const { email, password } = req.body.user;
@@ -24,9 +24,9 @@ router.post('/', async (req, res) => {
             res.status(401).send(`Invalid credentials`);
         }
         
-        const password = await bcrypt.compare(password, user.password);
+        const isPassword = await bcrypt.compare(password, user.password);
         
-        if (!password) {
+        if (!isPassword) {
             res.status(401).send(`Invalid credentials`);
         }
 
