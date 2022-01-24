@@ -4,8 +4,10 @@
 
 - React.js
 - Node.js
+- Next.js
 - Express.js
 - MongoDB
+- Socket.io
 
 ### Features currently under development:
 
