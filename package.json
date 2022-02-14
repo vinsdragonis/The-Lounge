@@ -8,7 +8,7 @@
     "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
-    "@artsy/fresnel": "^3.2.2",
+    "@artsy/fresnel": "^3.3.0",
     "axios": "^0.26.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.1",
