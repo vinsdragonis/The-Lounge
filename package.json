@@ -37,6 +37,6 @@
     "socket.io": "^4.7.2",
     "socket.io-client": "^4.7.2",
     "uuid": "^9.0.0",
-    "validator": "^13.9.0"
+    "validator": "^13.11.0"
   }
 }
