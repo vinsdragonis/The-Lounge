@@ -22,7 +22,7 @@
     "lodash": "^4.17.15",
     "moment": "^2.29.4",
     "mongoose": "^7.5.3",
-    "next": "^13.5.3",
+    "next": "^13.5.4",
     "nodemailer": "^6.9.5",
     "nodemailer-sendgrid-transport": "^0.2.0",
     "nookies": "^2.3.0",
