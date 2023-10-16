@@ -21,7 +21,7 @@
     "jsonwebtoken": "^9.0.2",
     "lodash": "^4.17.15",
     "moment": "^2.29.4",
-    "mongoose": "^7.6.1",
+    "mongoose": "^7.6.2",
     "next": "^13.5.4",
     "nodemailer": "^6.9.6",
     "nodemailer-sendgrid-transport": "^0.2.0",
