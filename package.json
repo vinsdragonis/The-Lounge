@@ -34,7 +34,7 @@
     "react-toastify": "^10.0.5",
     "semantic-ui-css": "^2.5.0",
     "semantic-ui-react": "^2.1.5",
-    "socket.io": "^4.7.5",
+    "socket.io": "^4.8.0",
     "socket.io-client": "^4.7.5",
     "uuid": "^10.0.0",
     "validator": "^13.12.0"
