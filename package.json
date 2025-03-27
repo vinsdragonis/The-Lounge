@@ -11,7 +11,7 @@
     "@artsy/fresnel": "^8.1.0",
     "axios": "^1.8.4",
     "bcryptjs": "^3.0.2",
-    "body-parser": "^1.20.3",
+    "body-parser": "^2.2.0",
     "cloudinary": "^2.6.0",
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
