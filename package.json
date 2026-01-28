@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@artsy/fresnel": "^8.4.0",
-    "axios": "^1.13.3",
+    "axios": "^1.13.4",
     "bcryptjs": "^3.0.3",
     "body-parser": "^2.2.2",
     "cloudinary": "^2.9.0",
