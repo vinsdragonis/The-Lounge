@@ -30,7 +30,7 @@
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "react-infinite-scroll-component": "6.1.1",
-    "react-moment": "^1.2.0",
+    "react-moment": "^1.2.1",
     "react-toastify": "^11.0.5",
     "semantic-ui-css": "^2.5.0",
     "semantic-ui-react": "^2.1.5",
