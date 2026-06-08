@@ -29,7 +29,7 @@
     "nprogress": "^0.2.0",
     "react": "19.2.7",
     "react-dom": "19.2.7",
-    "react-infinite-scroll-component": "7.2.0",
+    "react-infinite-scroll-component": "7.2.1",
     "react-moment": "^2.0.2",
     "react-toastify": "^11.1.0",
     "semantic-ui-css": "^2.5.0",
