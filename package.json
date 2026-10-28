@@ -23,7 +23,7 @@
     "moment": "^2.31.0",
     "mongoose": "^9.11.2",
     "next": "^16.4.2",
-    "nodemailer": "^10.1.7",
+    "nodemailer": "^10.2.1",
     "nodemailer-sendgrid-transport": "^0.2.0",
     "nookies": "^2.3.0",
     "nprogress": "^0.2.0",
